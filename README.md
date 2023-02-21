@@ -1,6 +1,6 @@
 ﻿/================================== README QuaiAntique ================================/
-Cette application a été réalisée dans le cadre d'une formation STUDI.
-Tous droits et usages étant réservés à l'attention du centre de formation
+ Cette application a été réalisée dans le cadre d'une formation STUDI.
+ Tous droits et usages étant réservés à l'attention du centre de formation
 et des examinateurs pour l'obtention d'un Titre Professionnel de Devellopeur WEB 
 et WEB Mobile.
 
