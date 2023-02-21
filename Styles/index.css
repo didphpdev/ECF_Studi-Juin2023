@@ -1,0 +1,254 @@
+body {
+    background-color: #B6AC97;
+    overflow: auto;
+}
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+ 
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+.container {
+  grid-template-columns :  repeat( auto-fill ,  minmax ( 300px ,  1 fr ));
+  grid-gap :  1em;
+  height: auto;
+}
+.row {
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+}
+.FontQuaiEntete {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 60px;
+}
+.FontQuaiEnteteAdm {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 50px;
+}
+.FontQuaiTeteLst {
+    font-family: cursive;
+    font-size: 20px;
+    background: grey; 
+    color: #ffffff;
+}
+.FontQuaiHeader {
+    font-family: "MonEcriture";
+    font-size: 30px;
+    color: #906427;
+}
+#ShowDaySelect {
+    font-family: "MonEcriture";
+    font-size: 30px;
+    color: #906427;
+}
+.SousTitre {
+    color: #B6AC97;
+}
+input[type="radio"].choicehour {
+  display: none;
+}
+input[type="radio"].choicehour + label {
+  padding: 0.3rem 1rem;
+  border: 1px outset #ccc;
+  background-color: #842029;
+  color: #ff0;
+}
+input[type="radio"].choicehour + label:hover {
+    background-color: #ff0;
+    color: #000;
+}
+input[type="radio"].choicehour:checked + label {
+  border: 1px solid #000;
+  background-color: #FFF;
+  color: #000;
+}
+.home {
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+    margin-left: 95%;
+}
+#btnMenu {
+    font-size: 1.1rem;
+    line-height: 2;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #B6AC97, #ddd);
+    box-shadow: 1px 1px 1px black,
+              inset 2px 3px 5px rgba(0,0,0,0.3)
+              inset -2px -3px 5px rgba(255,255,255,0.5);
+}
+#btnMenu:hover, #btnMenu:focus {
+    color: #FFF;
+    background-image: linear-gradient(to bottom right, #392C1E, #eee);
+}
+#btnMenu:active {
+  box-shadow: inset 2px 2px 1px black,
+              inset 2px 3px 5px rgba(0,0,0,0.3),
+              inset -2px -3px 5px rgba(255,255,255,0.5);
+}
+img:hover {
+    cursor: pointer;
+}
+/******************************************/
+.forms-connect{
+    position: relative;
+}
+.forms-connect span {
+    position: absolute;
+    top:-18px;
+    left: 10px;
+    /* background-color: #fff; */
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.forms-connect input{
+    height: 50px;
+    border: 2px solid #eee;
+}
+.forms-connect input:focus{
+    box-shadow: none;
+    outline: none;
+    border: 2px solid #000;
+}
+.btn {
+    height: 50px;
+}
+.success-data {
+    display: flex;
+    flex-direction: column;
+}
+.bxs-badge-check{
+    font-size: 90px;
+}
+.styleBtn {
+    border: 0;
+    text-decoration: none;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #777, #ddd);
+    box-shadow: 1px 1px 1px black,
+              inset 2px 3px 5px rgba(0,0,0,0.3),
+              inset -2px -3px 5px rgba(255,255,255,0.5);
+}
+.styleBtn:focus, .styleBtn:hover {
+    color: #ff0;
+    font-weight: bold;
+    background-color: #0d6efd;
+    cursor: pointer;
+    text-transform: uppercase;
+ }
+.styleIcon img{
+    height: 20px;
+    width: 20px;
+    -webkit-transition: all 50ms ease; /* Safari et Chrome */
+    -moz-transition: all 50ms ease; /* Firefox */
+    -ms-transition: all 50ms ease; /* Internet Explorer 9 */
+    -o-transition: all 50ms ease; /* Opera */
+    transition: all 50ms ease;
+}
+.styleIcon:hover img {
+    cursor: pointer;
+    -webkit-transform:scale(1.40); /* Safari et Chrome */
+    -moz-transform:scale(1.40); /* Firefox */
+    -ms-transform:scale(1.40); /* Internet Explorer 9 */
+    -o-transform:scale(1.40); /* Opera */
+    transform:scale(1.40);
+}
+.closeModal {
+    text-decoration: none;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 90%;
+    height: 30px;
+    width: 30px;
+}
+.closeModal:hover {
+    cursor: pointer;
+}
+.styleBtnLink {
+    color: #0d6efd;
+    border: none;
+    background-color: #B6AC97;
+}
+.styleBtnLink:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/************** GALLERY ************/
+.STICKER {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.STICKER span {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 95%;
+    top: 50%;
+    height: 50%;
+    font-size: 2em;
+    opacity: 0;
+}
+.STICKER span:hover {
+    cursor: pointer;
+    color: white;
+    opacity: 0.6;
+    -moz-transition: all .5s .1s;
+    -webkit-transition: all .5s .1s;
+    
+}
+/****************************** Modif des horaires *****************************/
+.DayMdf {
+    font-size: 1.1rem;
+    line-height: 2;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #B6AC97, #ddd);
+    box-shadow: 1px 1px 1px black,
+              inset 2px 3px 5px rgba(0,0,0,0.3)
+              inset -2px -3px 5px rgba(255,255,255,0.5);
+}
+.DayMdf:hover, .DayMdf:focus {
+    font-weight: bold;
+    color: #ff0;
+    background-image: linear-gradient(to bottom right, #392C1E, #eee);
+}
+.DayMdf:active {
+  box-shadow: inset 2px 2px 1px black,
+              inset 2px 3px 5px rgba(0,0,0,0.3),
+              inset -2px -3px 5px rgba(255,255,255,0.5);
+}
+table th {
+    font-family: cursive;
+    font-size: 12px;
+}
+/**********************************/
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"] {
+    color: #f2f2f2;
+}
+input[type="radio"] {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+    cursor: pointer;
+}
